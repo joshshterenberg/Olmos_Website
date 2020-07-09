@@ -1,0 +1,382 @@
+body {
+    background-color: rgb(85,44,8);
+    background-image: url(cross.webp);
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+    display: inline-table;
+    margin: 0 0 0 10px;
+    padding: 30px 0 0 0;
+}
+
+div {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 976px;
+    height: 150px;
+}
+
+a {
+    
+}
+
+span {
+    color: #B7CAE2;
+    transition: 0.3s color ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+span:hover {
+    color: aliceblue;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 0 0 17px;
+    padding: 0;
+    text-align: center;
+    float: left;
+    line-height: 20px;
+    color: #FFFFFF;
+    transition: color 0.4s ease 0s;
+    display: inline-block;
+    padding: 0 10px;
+    font: normal normal normal 14px/1.1em 'Open Sans',sans-serif;
+    text-height: 50px;
+    cursor: pointer;
+}
+
+
+
+
+.ensemble {
+    margin: 0 0 0 13px;
+}
+
+img {
+    margin: 0 0 0 50px;
+    padding: 0;
+    width: inherit;
+}
+
+.hotbar {
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+.image {
+    height: 650px;
+    margin-bottom: 40px;
+}
+
+.letter {
+    margin: 0 auto 300px auto;
+    padding: 0;
+    height: 340px;
+    font-size: 18px;
+    width: inherit;
+}
+
+p {
+    color: #CFB486;
+    margin: 45px;
+    margin-left: 0;
+    line-height: 1.5;
+}
+
+.container {
+    margin: 0px auto 0 auto;
+    padding: 10px 0 0 0;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+em {
+    margin: 0 0 0 0;
+    padding: 1px;
+}
+
+.img-text {
+    background-image: url(Group_standing.webp);
+    background-size: contain;
+    width: 966px;
+    margin: 0;
+    padding: 0;
+    border: 5px solid;
+    border-color: white;
+    color: black;
+    height: inherit;
+}
+
+.minievents {
+    margin: 0;
+    width: 49%;
+    float: right;
+}
+.minievents h3 {
+    color: #FFD6B3;
+    line-height: 1.2em;
+    font: normal normal normal 18px/1.2em 'Open Sans',sans-serif;
+}
+
+h3 {
+    border-bottom: 2px solid #ddd;
+}
+
+.surround {
+    width: 980px;
+    height: 1000px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.title {
+    margin: -14px auto 0 auto;
+    padding: 5px 0 0 0;
+}
+
+.textlink {
+    font-size: 18px;
+    color: white;
+}
+
+.bigboy {
+    text-decoration: none;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    outline: 0;
+    font-size: 26px;
+    cursor: pointer;
+    text-shadow: 
+        rgba(0,0,0,0.498039) -1px -1px 0,
+        rgba(0,0,0,0.498039) -1px 1px 0,
+        rgba(0,0,0,0.498039) 1px 1px 0,
+        rgba(0,0,0,0.498039) 1px -1px 0;
+    line-height: normal;
+    font: normal normal normal 26px/1.3em 'Open Sans',sans-serif;
+    color: aliceblue;
+    transition: 0.3s color ease-in-out;
+}
+.bigboy:hover {
+    color: #B7CAE2;
+}
+.bigboy:hover > span {color: aliceblue;}
+
+.minicontact {
+    width: 49%;
+    height: auto;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.date {
+    background-color: #ffd6b3;
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+.date h5 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+    text-shadow:
+        rgba(255, 255, 255, 0.6) 1px 1px 1px, 
+        rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    color: #3D2D12;
+    font: normal normal normal 18px/1.3em 'Open Sans',sans-serif;
+}
+.date h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-shadow:
+        rgba(255, 255, 255, 0.6) 1px 1px 1px, 
+        rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    color: white;
+    font: normal normal normal 35px/1.1em 'Open Sans',sans-serif;
+}
+
+.timy {
+    width: 25px;
+    float: right;
+    margin: 10px;
+    margin-top: -10px;
+    padding: 0;
+}
+
+.timy1 {
+    width: 25px;
+    float: right;
+    margin: 10px;
+    margin-top: -3px;
+    padding: 0;
+}
+
+.boys {
+    width: 886px;
+    margin: 30px auto 0 auto;
+    padding: 0;
+}
+
+.cpyrght {
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.details {
+    width: inherit;
+}
+.details p {
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+.hotlink {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s color ease-in-out;
+}
+.hotlink:hover {
+    color: #DBDBDB;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    transition: 0.2s color ease-in-out;
+}
+.dropbtn:hover {
+    color: #DBDBDB;
+}
+
+.dropdown {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    float: left;
+}
+.dropdown:hover {
+    height: 50px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    background-color: black;
+    margin: 23px 0 0 -97px; 
+    padding: 0;
+    max-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height: auto;
+}
+.dropdown_content a {
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s color ease-in-out;
+    display: block;
+}
+.dropdown_content a:hover {color: #DBDBDB;}
+.dropdown:hover .dropdown_content {display: block;}
+
+
+
+
+.text1 {
+    width: auto;
+    height: auto;
+    font: normal normal normal 24px/1.1em 'Open Sans',sans-serif;
+    float: left;
+    margin-left: 45px;
+    color: #CFB486;
+    border-bottom: 1px solid #CFB486;
+}
+
+.sub {
+    font: normal normal normal 19px/1.1em 'Open Sans',sans-serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+input[type=text], select, textarea {
+  width: 49%; 
+  padding: 5px; 
+  border: 1px solid #CFB486;
+  color: darkgrey;
+  background-color: black;
+  box-sizing: border-box; 
+  margin: 2px;
+  resize: none;
+}
+input[type=submit] {
+    background: transparent;
+    color: #CFB486;
+    transition: 0.2s color ease-in-out;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+input[type=submit]:hover {
+    color: blanchedalmond;
+}
+.contact_box {
+    width: 60%;
+    float: right;
+    height: auto;
+}
+
+.text2 {
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0 60px;
+    padding: 0;
+}
+.text2 h4 {
+    margin: 0 0 15px 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    font: normal normal normal 16px/1.3em 'Open Sans',sans-serif;
+    color: #CFB486;
+}
+.text2 p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    font: normal normal normal 13px/1.43em 'Open Sans',sans-serif;
+    color: white;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
