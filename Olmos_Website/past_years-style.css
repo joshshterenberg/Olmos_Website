@@ -1,8 +1,7 @@
 body {
-    background: url(Group_sitting.webp);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #5a2606;
+    background: linear-gradient(#5a2606, #e45825);
 }
 ul {
     text-decoration: none;
