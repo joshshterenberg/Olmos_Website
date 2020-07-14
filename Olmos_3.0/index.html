@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" />
+        <title>Olmos Ensemble | United States</title>
+    </head>
+    <body>
+        
+        <!-- Collapsable nav bar with title, links and small links -->
+        
+        <div id="header">
+            <img id="logo" src="images/Olmos_Logo_Multicolor.jpg">
+            <nav id="headerNav">
+                <ul id="headUL">
+                    <li class="navLinks"><a href="#">About</a></li>
+                    <li class="navLinks"><a href="#">Artists</a></li>
+                    <li class="navLinks"><a href="#">Concert Schedule</a></li>
+                    <li class="navLinks"><a href="#">Recordings</a></li>
+                    <li class="navLinks"><a href="#">Supporters</a></li>
+                    <li class="navLinks"><a href="#">Donate</a></li>
+                    <li class="navLinks"><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div id="navPics">
+                <img src="images/facebook.webp">
+                <img src="images/facebook.webp">
+                <img src="images/facebook.webp">
+                <img src="images/facebook.webp">
+                <img src="images/facebook.webp">
+            </div>
+        </div>
+    
+        <!-- Group pic -->
+        
+        <div id="fillerImage">
+            <img src="images/E04A0483_cropped.jpg">
+        </div>
+        
+        <!-- About paragraph -->
+        
+        <div id="about">
+            <h1>About Olmos Ensemble</h1>
+            <p>I like your filler text for paragraphs. I too often struggle to find just the right words to fill out enough space in my writing
+            so that it actually looks as if this is a full paragraph with important information. Although, up till now, I just used Lorem Ipsum 
+            which seemed to do the trick. I like this better though. Blah blah blah anyways I'm just trying to get this to four lines and it is taking a little while longer than I had initially anticipated so if I don't get there soon I might have to start quoting the declaration of independence
+            we the people in order to form a more perfect union </p>
+        </div>
+        
+        <!-- Testimonial 1 -->
+        
+        <div class="testimonials">
+            <h3>"Woah omg I love that violinist and woah he's so young too!" - Everyone</h3>
+        </div>
+        
+        <!-- artists -->
+        
+        <div id="artists">
+            <h1>Artists</h1>
+            <div>
+                <img >
+                <h4></h4>
+                <h4></h4>
+            </div>
+            <div>
+                <img >
+                <h4></h4>
+                <h4></h4>
+            </div>
+            <div>
+                <img >
+                <h4></h4>
+                <h4></h4>
+            </div>
+            <div>
+                <img >
+                <h4></h4>
+                <h4></h4>
+            </div>
+            <div>
+                <img >
+                <h4></h4>
+                <h4></h4>
+            </div>
+            <div>
+                <img >
+                <h4></h4>
+                <h4></h4>
+            </div>
+        </div>
+        
+        <!-- testimonial 2 -->
+        
+        <div class="testimonials">
+            <h3>"Ugh, that FLUTE. GORGEOUS. There is LIQUID HONEY comin outta that thing." - Flute nerds</h3>
+        </div>
+        
+        <!-- summer series -->
+        
+        <!-- filler pic -->
+        
+        <!-- season series -->
+        
+        <!-- testimonial 3 -->
+        
+        <!-- recordings -->
+        
+        <!-- donors -->
+        
+        <!-- donate -->
+        
+        <!-- contact -->
+        
+        <!-- cpyrght -->
+        
+        <!-- JavaScript -->
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            window.onload = function() {loadFunction()};
+            
+            function loadFunction() {
+                if (screen.width <= 500) {
+                    document.getElementById("headerNav").style.display = "none";
+                    document.getElementById("navPics").style.display = "none";
+                }
+            }
+            
+            function scrollFunction() {
+                var x = document.getElementsByClassName("navLinks");
+                if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (screen.width > 500)) {
+                    document.getElementById("logo").style.maxWidth = "15%";
+                    document.getElementById("logo").style.marginLeft = "2%";
+                    document.getElementById("navPics").style.display = "none";
+                    document.getElementById("headUL").style.float = "right";
+                    document.getElementById("headerNav").style.marginTop = "2.2%";
+                    for (var i = 0; i < x.length; i++) {
+                        x[i].style.fontSize = "98%";
+                    }
+                } else if (screen.width > 500) {
+                    document.getElementById("logo").style.maxWidth = "50%";
+                    document.getElementById("logo").style.marginLeft = "25%";
+                    document.getElementById("navPics").style.display = "inherit";
+                    document.getElementById("headUL").style.float = "none";
+                    document.getElementById("headerNav").style.marginTop = "21%";
+                    for (var i = 0; i < x.length; i++) {
+                        x[i].style.fontSize = "135%";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
