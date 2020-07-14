@@ -84,7 +84,7 @@ input, select, textarea {
 
 	body {
 		background-color: #183026;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/instruments.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -383,7 +383,6 @@ input, select, textarea {
 
 		.row.gtr-0 {
 			margin-top: 0px;
-			margin-left: 0px;
 		}
 
 			.row.gtr-0 > * {
@@ -1501,6 +1500,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+            margin-left: 50%;
 		}
 
 		.image.left {
@@ -2352,7 +2352,7 @@ input, select, textarea {
 
 			body {
 				background-color: #203936;
-				background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
+				background-image: url("images/overlay.png"), url("../../images/instruments-alt.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
