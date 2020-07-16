@@ -6,11 +6,15 @@
 }
 body { 
     margin: 0;
-    background-color: black;
+    background-image: url(images/overlay.png), url(images/group_John.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
 #header {
-    background-color: #000;
+    background-color: rgba(0,0,0,0.9);
     padding: 5px;
     color: black;
     position: fixed;
@@ -19,7 +23,7 @@ body {
 }
 #header #logo {
     max-width: 50%;
-    margin-left: 25%;
+    margin: 2% 0 1% 25%;
     height: auto;
     width: auto/2;
     float: left;
@@ -44,19 +48,25 @@ body {
     display: inline;
     color: white;
     font-family: cominfB;
-    font-size: 135%; /* changing */
+    font-size: 2vw; /* changing */
     text-decoration: none;
     margin: 1% 1.5%;
     padding: 0;
     transition: 0.1s;
 }
+.navLinks a {
+    color: white;
+}
+.navLinks a:hover {
+    color: #70bf44;
+}
 a {
     text-decoration: none;
-    color: inherit;
+    color: #70bf44;
     transition: 0.2s;
 }
 a:hover {
-    color: #006242;
+    color: #faaa69;
 }
 #navPics {
     text-align: center;
@@ -64,12 +74,12 @@ a:hover {
     margin-top: 10px;
 }
 #navPics img {
-    min-width: 2.3%;
+    width: 2.3%;
     height: auto;
     margin: 10px;
 }
 #fillerImage {
-    margin-top: 460px;
+    margin-top: 430px;
     margin-bottom: 0;
     padding: 15px 0 0 0;
 }
@@ -81,7 +91,7 @@ a:hover {
     padding: 0;
 }
 #about {
-    background-color: #006242;
+    background-color: rgba(0,98,66,0.95);
     width: 100%;
     height: auto;
     margin: 0;
@@ -90,6 +100,11 @@ a:hover {
 }
 h1, h2, h3, h4 {
     font-family: cominfB;
+}
+#cpyrght h4 {
+    color: white;
+    margin: 0;
+    padding: 25px 0;
 }
 p {
     font-size: 140%;
@@ -113,18 +128,23 @@ h1 {
 
 .testimonials {
     text-align: center;
+    background-color: rgba(0,0,0,0.8);
     width: 100%;
     height: auto;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 .testimonials h3 {
     color: white;
     font-size: 140%;
-    margin: 30px 0;
+    margin: 0;
+    padding: 50px 0;
 }
 #artists {
-    background-color: #344486;
-    height: 400px;
+    background-color: rgba(52,68,134,0.95);
+    height: auto;
+    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -134,6 +154,9 @@ h1 {
     padding: 0;
     width: 12%;
     height: 30%;
+}
+.smallPics h4 {
+    font-size: 1.5vw;
 }
 .smallPics img {
     width: 100%;
@@ -153,20 +176,35 @@ h1 {
 }
 
 #summer {
-    background-color: #0076a3;
-    height: 1200px;
+    background-color: rgba(0, 118, 163, 0.95);
+    height: auto;
+    padding-bottom: 20px;
+}
+
+#summer h3 {
+    width: 80%;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .shows {
-    width: 50%;
+    width: 43%;
+    background-color: rgba(255,255,255,0.1);
     height: 150px;
     margin: 20px auto;
+}
+.shows h4 {
+    margin: 0;
+    padding-top: 12px;
 }
 .shows img {
     height: inherit;
     width: 150px;
     float: left;
-    margin: 0px 50px;
+    margin: 0px 50px 0 0;
 }
 .shows h2 {
     margin: 0;
@@ -185,13 +223,39 @@ h1 {
 }
 
 #season {
-    background-color: #6f20c3;
-    height: 1200px;
+    background-color: rgba(111,32,195,0.95);
+    height: auto;
+    padding-bottom: 20px;
+}
+#season h3 {
+    width: 80%;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0;
+}
+#season a {
+    color: #70bf44;
+}
+#season a:hover {
+    color: #faaa69;
+}
+#summer a {
+    color: #70bf44;
+}
+#summer a:hover {
+    color: #faaa69;
 }
 
 #recordings {
-    background-color: #006242;
+    background-color: rgba(0,98,66,0.95);
     text-align: center;
+    height: auto;
+    padding-bottom: 20px;
+}
+.prevconc {
+    margin: 0 20px;
 }
 #recordings div {
     width: 300px;
@@ -206,7 +270,10 @@ h1 {
 }
 
 #donors {
+    background-color: rgba(120,120,120,0.9);
     text-align: center;
+    height: auto;
+    padding-bottom: 20px;
 }
 
 .row {
@@ -218,32 +285,123 @@ h1 {
 }
 
 #donate {
-    background-color: #006242;
+    background-color: rgba(0,98,66,0.95);
+    height: auto;
+    padding-bottom: 20px;
+}
+#donate p {
+    width: 70%;
+    color: white;
+    line-height: 1.3em;
+    margin: 1.5% auto;
+}
+#donate h3 {
+    background-color: rgba(105,105,0,0.6);
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 10%;
+    transition: 0.2s;
+    font-size: 150%;
+    color: #70bf44;
+}
+#donate h3:hover {
+    color: #faaa69;
 }
 
 #contact {
-    background-color: black;
-    border-radius: 5px;
-    padding: 20px;
+    background-color: rgba(0,0,0,0.95);
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+}
+form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
 }
 input[type=text], select, textarea {
-    width: 70%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: block;
+    height: 25px;
+    
 }
 input[type=submit] {
-    background-color: #4caf50;
-    color: #70be44;
-    padding: 12px 20px;
+    background-color: #70bf44;
+    color: #000;
+    padding: 8px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px 0;
+    width: 25%;
+    font-size: 20px;
+    transition: 0.3s;
+    float: right;
 }
 input[type=submit]:hover {
-    color: #faaa69;
+    background-color: #faaa69;
+}
+#navPics2 img {
+    width: 2.3%;
+    margin: 0 1.5%;
+}
+
+#cpyrght {
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    padding-top: 30px;
+}
+
+button {
+    border: none;
+    width: 40%;
+    height: 8%;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #70bf44;
+    transition: 0.2s;
+}
+button:hover {
+    background-color: #faaa69;
+    cursor: pointer;
+}
+
+#bigdonors img {
+    width: 15%;
+}
+
+#namelist h4 {
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+}
+#namelist p {
+    font-size: 100%;
+}
+
+#namelist {
+    -webkit-columns: 5 200px;
+    -moz-columns: 5 200px;
+    columns: 5 200px;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
+    -webkit-column-rule: 1px dotted #ddd;
+    -moz-column-rule: 1px dotted #ddd;
+    column-rule: 1px dotted #ddd;
+    padding: 0 20px;
+    text-align: left;
+}
+
+#current {
+    text-align: center;
+    color: white;
+    background-color: rgba(111,32,195, 0.95);
+    height: auto;
+    padding-bottom: 20px;
 }
