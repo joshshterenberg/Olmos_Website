@@ -169,6 +169,9 @@ h1 {
     color: white;
     margin: 0;
 }
+.name a {
+    cursor: pointer;
+}
 
 .instrumentName {
     margin: 0;
