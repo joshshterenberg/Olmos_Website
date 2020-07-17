@@ -62,6 +62,9 @@
                 <br>Ilya Shterenberg, Clarinet - <a href="https://youtu.be/35iNTHF-xDc">Episode 3</a>
                 <br>Mark Teplitsky, Flute - <a href="https://youtu.be/XljnIMNjDUE">Episode 2</a>
                 <br>Paul Lueders, Oboe - <a href="https://youtu.be/HzycN9CeXdo">Episode 1</a></p>
+            <p style="width: 80%; margin: 0 auto;"><em><br><br>COVID-19 changes, effective immediately until further notice:</em></p>
+            <button id="covidbutton" onclick="openCOVID()">Show More</button>
+            <p id="coviddetails" style="display: none;"><em><br><br>We will not issue donor cards this season. We will not have season brochures. All concerts that have a live audience will require a reservation that MUST be made in advance. All program information will be made available on our website (you are here). August concerts will be broadcast live on KPAC 88.3 FM. August concert videos will be made available on our YouTube channel the weekend following the concert date. All staff and audience members are required to wear masks at all events at all times. Staff will wear gloves. Antibacterial hand sanitizers will be available. All attendees will be required to wear masks at all times. Masks will be provided if attendee does not have their own. A 50 person audience limit will be in effect; advance reservations required to attend. Call (210) 269-1925 to reserve your seat. No entry allowed without advance reservation confirmation. Distance seating will be observed with specific seat locations for each reservation, parties seated together will be limited to 4 persons. No audience members will be seated near the aisles where musicians will be walking. First four rows will be kept vacant and a 6’ distance will be kept from the aisle where the musicians enter the sanctuary. Due to the nature of performing on wind instruments, musicians will not be required to wear masks while performing. Seating in the LHUMC sanctuary will be every other row with 6’ between parties for adequate social distancing. No paper programs will be distributed at concerts – all program information will be available on our website. No sales items (CD’s, shirts, cups) will be available at our concerts.</em><br><br><strong>The Olmos Ensemble takes the safety and health of its staff and audience members extremely seriously. As an audience member, failure to comply with the rules outlined above in their entirety grants all staff members of the Olmos Ensemble the right, ability and discretion to expel the audience member in question from the premises for any amount of time deemed necessary by the staff, deny the audience member in question entry into any or all events, current and future, of the Olmos Ensemble.</strong></p>
         </div>
         
         
@@ -237,7 +240,7 @@
         <!-- donors -->
         
         <div id="donors">
-            <h1>Business and Media Support</h1>
+            <h1>Supporters</h1>
             <!--<p style="width: 80%; margin: 0 auto 20px; color: lightgrey; font-size: 110%">Listed here are the generous donors who make this experience possible through gifts or pledges for our upcoming season made since May 1, 2020. We try to keep this listing as up-to-date as possible, so if you are a donor and do not see your name on this list please contact Olmos Ensemble. </p>-->
             <div id="namelist">
                 <!--<h4>Concert Sponsors</h4>
@@ -407,7 +410,7 @@
         <!-- Testimonial 1 -->
         
         <div class="testimonials">
-            <h3 class="testText"></h3>
+            <h3 class="testText">"The Olmos Ensemble enlightens the San Antonio community with enchanting music of breathtaking quality and unique interpretation." - Katie McGrail</h3>
         </div>
         
         <!-- About paragraph -->
@@ -522,6 +525,16 @@
             function closeNav() {
                 document.getElementById("mySidebar").style.width = "0";
                 document.getElementById("header").style.marginLeft = "0";
+            }
+            function openCOVID() {
+                var b = document.getElementById("covidbutton");
+                if (b.innerHTML === "Show More") {
+                    document.getElementById("coviddetails").style.display = "inherit";
+                    document.getElementById("covidbutton").innerHTML = "Show Less";
+                } else {
+                    document.getElementById("coviddetails").style.display = "none";
+                    document.getElementById("covidbutton").innerHTML = "Show More";
+                }
             }
             function hover(element, replacement) {
                 element.setAttribute('src', replacement);
