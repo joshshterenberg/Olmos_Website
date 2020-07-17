@@ -6,15 +6,11 @@
 }
 body { 
     margin: 0;
-    background-image: url(images/overlay.png), url(images/group_John.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(10,10,10,1);
     font-family: Arial, Helvetica, sans-serif;
 }
 #header {
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,1);
     padding: 5px;
     color: black;
     position: fixed;
@@ -91,7 +87,7 @@ a:hover {
     padding: 0;
 }
 #about {
-    background-color: rgba(0,98,66,0.95);
+    background-color: rgba(0,98,66,1);
     width: 100%;
     height: auto;
     margin: 0;
@@ -132,7 +128,7 @@ h1 {
 
 .testimonials {
     text-align: center;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,1);
     width: 100%;
     height: auto;
     text-align: center;
@@ -146,7 +142,7 @@ h1 {
     padding: 50px 0;
 }
 #artists {
-    background-color: rgba(52,68,134,0.95);
+    background-color: rgba(52,68,134,1);
     height: auto;
     padding-bottom: 20px;
     text-align: center;
@@ -170,7 +166,7 @@ h1 {
 }
 
 .name {
-    color: #70BE44;
+    color: white;
     margin: 0;
 }
 
@@ -180,7 +176,7 @@ h1 {
 }
 
 #summer {
-    background-color: rgba(0, 118, 163, 0.95);
+    background-color: rgba(0, 118, 163, 1);
     height: auto;
     padding-bottom: 20px;
 }
@@ -196,7 +192,7 @@ h1 {
 
 .shows {
     width: min(85%, 75vh);
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,1);
     height: auto;
     padding-bottom: 5px;
     margin: 20px auto;
@@ -237,7 +233,7 @@ h1 {
 }
 
 #season {
-    background-color: rgba(111,32,195,0.95);
+    background-color: rgba(111,32,195,1);
     height: auto;
     padding-bottom: 20px;
 }
@@ -263,7 +259,7 @@ h1 {
 }
 
 #recordings {
-    background-color: rgba(0,98,66,0.95);
+    background-color: rgba(0,98,66,1);
     text-align: center;
     height: auto;
     padding-bottom: 20px;
@@ -289,7 +285,7 @@ h1 {
 }
 
 #donors {
-    background-color: rgba(120,120,120,0.9);
+    background-color: rgba(120,120,120,1);
     text-align: center;
     height: auto;
     padding-bottom: 20px;
@@ -304,7 +300,7 @@ h1 {
 }
 
 #donate {
-    background-color: rgba(0,98,66,0.95);
+    background-color: rgba(0,98,66,1);
     height: auto;
     padding-bottom: 20px;
 }
@@ -315,7 +311,7 @@ h1 {
     margin: 1.5% auto;
 }
 #donateButton {
-    background-color: rgba(105,105,0,0.6);
+    background-color: inherit;
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;
@@ -329,7 +325,7 @@ h1 {
 }
 
 #contact {
-    background-color: rgba(0,0,0,0.95);
+    background-color: rgba(0,0,0,1);
     width: 100%;
     height: auto;
     padding-bottom: 80px;
@@ -371,7 +367,7 @@ input[type=submit]:hover {
 }
 
 #cpyrght {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,1);
     text-align: center;
     padding-top: 30px;
 }
@@ -416,12 +412,13 @@ button:hover {
     column-rule: 1px dotted #ddd;
     padding: 0 20px;
     text-align: left;
+    color: white;
 }
 
 #current {
     text-align: center;
     color: white;
-    background-color: rgba(111,32,195, 0.95);
+    background-color: rgba(111,32,195, 1);
     height: auto;
     padding-bottom: 20px;
 }

@@ -36,11 +36,11 @@
                 </ul>
             </nav>
             <div id="navPics">
-                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png"></a>
-                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png"></a>
-                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png"></a>
-                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png"></a>
-                <a href="#summer"><img src="images/icon_calendar.png"></a>
+                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png" onmouseover="hover(this, 'images/icon_fbook_green.png')" onmouseout="hover(this, 'images/icon_fbook.png')"></a>
+                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png" onmouseover="hover(this, 'images/icon_insta_green.png')" onmouseout="hover(this, 'images/icon_insta.png')"></a>
+                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png" onmouseover="hover(this, 'images/icon_yt_green.png')" onmouseout="hover(this, 'images/icon_yt.png')"></a>
+                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" onmouseover="hover(this, 'images/icon_email_green.png')" onmouseout="hover(this, 'images/icon_email.png')"></a>
+                <a href="#summer"><img src="images/icon_calendar.png" onmouseover="hover(this, 'images/icon_calendar_green.png')" onmouseout="hover(this, 'images/icon_calendar.png')"></a>
             </div>
             <button id="phonemenu" class="openbtn" onclick="openNav()">☰</button>
         </div>
@@ -445,7 +445,7 @@
                 <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" class="boys"></a> 
                 <a href="#summer"><img src="images/icon_calendar.png" class="boys"></a>
             </div>
-            <h4>© 2020 Olmos Ensemble, All Rights Reserved. Created by Joshua Shterenberg.</h4>
+            <h4>© 2020 Olmos Ensemble, All Rights Reserved.</h4>
         </div>
         
         <!-- JavaScript -->
@@ -522,6 +522,9 @@
             function closeNav() {
                 document.getElementById("mySidebar").style.width = "0";
                 document.getElementById("header").style.marginLeft = "0";
+            }
+            function hover(element, replacement) {
+                element.setAttribute('src', replacement);
             }
         </script>
     </body>
