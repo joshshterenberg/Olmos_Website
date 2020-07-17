@@ -30,7 +30,7 @@ body {
     transition: 0.4s;
 }
 #headerNav {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
     margin: 21% 0 0 0; /* changing */
     padding: 0;
@@ -41,14 +41,14 @@ body {
     float: none;
     padding: 0;
     transition: 0.4s;
-    min-width: 1000px;
+    width: 80%;
 }
 .navLinks {
     list-style-type: none;
     display: inline;
     color: white;
     font-family: cominfB;
-    font-size: 2vw; /* changing */
+    font-size: 1.5vw; /* changing */
     text-decoration: none;
     margin: 1% 1.5%;
     padding: 0;
@@ -79,7 +79,7 @@ a:hover {
     margin: 10px;
 }
 #fillerImage {
-    margin-top: 430px;
+    margin-top: 28vw;
     margin-bottom: 0;
     padding: 15px 0 0 0;
 }
@@ -101,18 +101,22 @@ a:hover {
 h1, h2, h3, h4 {
     font-family: cominfB;
 }
+#current h2 {
+    font-size: 2.9vw;
+}
 #cpyrght h4 {
     color: white;
-    margin: 0;
+    margin: 0 auto;
     padding: 25px 0;
+    width: 95%;
 }
 p {
-    font-size: 140%;
+    font-size: min(140%, 2vw);
 }
 h1 {
-    font-size: 370%;
+    font-size: min(6vw, 400%);
     margin: 0 auto;
-    padding: 50px 0 25px;
+    padding: 5vh 0 2vh;
     width: 100%;
     text-align: center;
     color: white;
@@ -137,7 +141,7 @@ h1 {
 }
 .testimonials h3 {
     color: white;
-    font-size: 140%;
+    font-size: min(2.2vw, 140%);
     margin: 0;
     padding: 50px 0;
 }
@@ -150,7 +154,7 @@ h1 {
 
 .smallPics {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 0.6vw;
     padding: 0;
     width: 12%;
     height: 30%;
@@ -185,29 +189,39 @@ h1 {
     width: 80%;
     text-align: left;
     color: white;
-    font-size: 20px;
+    font-size: min(1.9vw, 20px);
     margin: 0 auto;
     padding: 0;
 }
 
 .shows {
-    width: 43%;
+    width: min(85%, 75vh);
     background-color: rgba(255,255,255,0.1);
-    height: 150px;
+    height: auto;
+    padding-bottom: 5px;
     margin: 20px auto;
+}
+.shows p {
+    font-size: min(auto, 1.5vw);
+    margin-bottom: 9px;
 }
 .shows h4 {
     margin: 0;
-    padding-top: 12px;
+    padding: 0px;
+    white-space: nowrap;
+    font-size: min(1.6vw, auto);
 }
 .shows img {
-    height: inherit;
-    width: 150px;
+    min-height: 120px;
+    height: 100%;
+    width: min(150px, 10vh);
     float: left;
-    margin: 0px 50px 0 0;
+    margin: 0px 2vw 0 0;
 }
 .shows h2 {
     margin: 0;
+    white-space: nowrap;
+    font-size: min(2.4vw, auto);
     padding: 14px 0 0 0;
 }
 
@@ -215,7 +229,7 @@ h1 {
     width: 100%;
     margin-bottom: 0;
     padding: 0;
-    height: 350px;
+    height: 25vw;
 }
 #fillerImage2 img {
     width: inherit;
@@ -231,7 +245,7 @@ h1 {
     width: 80%;
     text-align: left;
     color: white;
-    font-size: 20px;
+    font-size: min(1.9vw, 20px);
     margin: 0 auto;
     padding: 0;
 }
@@ -254,6 +268,10 @@ h1 {
     height: auto;
     padding-bottom: 20px;
 }
+#recordings h4 {
+    width: 90%;
+    margin: 0 auto;
+}
 .prevconc {
     margin: 0 20px;
 }
@@ -267,6 +285,7 @@ h1 {
 #recordings div img {
     width: 300px;
     height: 300px;
+    margin: 0 auto;
 }
 
 #donors {
@@ -295,17 +314,17 @@ h1 {
     line-height: 1.3em;
     margin: 1.5% auto;
 }
-#donate h3 {
+#donateButton {
     background-color: rgba(105,105,0,0.6);
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;
-    width: 10%;
+    width: max(10%, 20vw);
     transition: 0.2s;
     font-size: 150%;
     color: #70bf44;
 }
-#donate h3:hover {
+#donateButton:hover {
     color: #faaa69;
 }
 
@@ -348,6 +367,7 @@ input[type=submit]:hover {
 #navPics2 img {
     width: 2.3%;
     margin: 0 1.5%;
+    height: auto;
 }
 
 #cpyrght {
@@ -404,4 +424,47 @@ button:hover {
     background-color: rgba(111,32,195, 0.95);
     height: auto;
     padding-bottom: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #70bf44;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    width: 50px;
+    padding: 0 0 0 10px;
+    border: none;
+}
+.openbtn:hover {
+    background-color: #70bf44;
 }

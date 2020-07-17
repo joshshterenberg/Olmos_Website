@@ -7,7 +7,19 @@
     </head>
     <body>
         
-        <!-- Collapsable nav bar with title, links and small links -->
+        <!-- Collapsable nav bar with title, links and small links [sidebar] -->
+        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="#current" onclick="closeNav()">Current Events</a>
+            <a href="#artists" onclick="closeNav()">Artists</a>
+            <a href="#summer" onclick="closeNav()">Concert Schedule</a>
+            <a href="#recordings" onclick="closeNav()">Recordings</a>
+            <a href="#donors" onclick="closeNav()">Supporters</a>
+            <a href="#donate" onclick="closeNav()">Donate</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#contact" onclick="closeNav()">Contact Us</a>
+        </div>
         
         <div id="header">
             <a href="#"><img id="logo" src="images/OLMOS_logo_multicolor.png"></a>
@@ -30,6 +42,7 @@
                 <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png"></a>
                 <a href="#summer"><img src="images/icon_calendar.png"></a>
             </div>
+            <button id="phonemenu" class="openbtn" onclick="openNav()">☰</button>
         </div>
     
         <!-- Group pic -->
@@ -80,7 +93,7 @@
             <div class="smallPics">
                 <img src="images/05.jpg">
                 <h4 class="name">Jeff Garza</h4>
-                <h4 class="instrumentName">FRENCH HORN</h4>
+                <h4 class="instrumentName">HORN</h4>
             </div>
             <div class="smallPics">
                 <img src="images/06.jpg">
@@ -128,41 +141,37 @@
         <!-- testimonial 2 -->
         
         <div class="testimonials">
-            <h3>"The talent and ability of the musicians is unbelievable!" - Neil Williams</h3>
+            <h3 class="testText">"The talent and ability of the musicians is unbelievable!" - Neil Williams</h3>
         </div>
         
         <!-- summer series -->
         
         <div id="summer">
-            <h1>Season 26: "Virtuosos and Visionaries"<br>Summer Concert Schedule</h1>
+            <h1>Season 26: "Virtuosos and Visionaries"<br>Summer Concert Series</h1>
             <h3>All concerts will be live broadcated on KPAC 88.3 FM in San Antonio. We do not sell tickets, but reservations are required. Contact us to make a reservation. Performance Location: <a href="https://www.google.com/maps/place/Laurel+Heights+United+Methodist+Church/@29.4530932,-98.4987385,17z/data=!3m1!4b1!4m5!3m4!1s0x865c5f68cbd37889:0xa26a80d57e16662d!8m2!3d29.4530932!4d-98.4965498">LHUMC</a></h3>
             <div class="shows">
                 <img src="#">
                 <h2>Celebrating Beethoven</h2>
-                <h4>Beethoven</h4>
-                <h4 style="padding-top: 0;">· Jones, Teplitsky, Kuster, Sykes</h4>
                 <p>August 2 @ 3:00 pm</p>
+                <h4>Beethoven · Jones, Teplitsky, Kuster, Sykes</h4>
             </div>
             <div class="shows">
                 <img src="#">
                 <h2>Elegant Baroque</h2>
-                <h4>Bach, Telemann, Vivaldi, Goldberg</h4>
-                <h4 style="padding-top: 0;">· Teplitsky, Lueders, de Oliveira, Wolf</h4>
                 <p>August 9 @ 3:00 pm</p>
+                <h4>Bach, Handel, Telemann, Vivaldi, Goldberg <br>· Teplitsky, Lueders, de Oliveira, Wolf</h4>
             </div>
             <div class="shows">
                 <img src="#">
                 <h2>Summer Salon</h2>
-                <h4>Gaubert, Machado, Bach, Enescu, Ginastera, Villa-Lobos</h4>
-                <h4 style="padding-top: 0;">· Teplitsky, Steele, Bustos, Wolf</h4>
                 <p>August 16 @ 3:00 pm</p>
+                <h4>Gaubert, Machado, Bach, Enescu, Ginastera, <br>Villa-Lobos · Teplitsky, Steele, Bustos, Wolf</h4>
             </div>
             <div class="shows">
                 <img src="#">
                 <h2>Dreams of America</h2>
-                <h4>Bernstein, Rochberg, Persichetti, Rachmaninov, Gershwin</h4>
-                <h4 style="padding-top: 0;">· Shterenberg, Garza, Wolfram</h4>
                 <p>August 23 @ 3:00 pm</p>
+                <h4>Bernstein, Rochberg, Persichetti, Rachmaninov, <br>Gershwin · Shterenberg, Garza, Wolfram</h4>
             </div>
         </div>
         
@@ -175,63 +184,63 @@
         <!-- season series -->
         
         <div id="season">
-            <h1>Season 26: "Virtuosos and Visionaries"<br>Season Concert Schedule</h1>
+            <h1>Season 26: "Virtuosos and Visionaries"<br>Season Concert Series</h1>
             <h3>All concerts will be live broadcated on KPAC 88.3 FM in San Antonio. We do not sell tickets, but reservations are required. Contact us to make a reservation. Performance Location: <a href="https://www.google.com/maps/place/Laurel+Heights+United+Methodist+Church/@29.4530932,-98.4987385,17z/data=!3m1!4b1!4m5!3m4!1s0x865c5f68cbd37889:0xa26a80d57e16662d!8m2!3d29.4530932!4d-98.4965498">LHUMC</a></h3>
             <div class="shows">
                 <img src="#">
                 <h2>Musical Menagerie</h2>
-                <h4>SAVE THE DATE!!!</h4>
                 <p>September 21 @ 7:30 pm</p>
+                <h4>SAVE THE DATE!!!</h4>
             </div>
             <div class="shows">
                 <img src="#">
                 <h2>Mozart Cocktail</h2>
+                <p>January 25 @ 7:30 pm</p>
                 <h4>SAVE THE DATE!!!</h4>
-                <p>January 24/25 @ 7:30 pm</p>
             </div>
             <div class="shows">
                 <img src="#">
                 <h2>Plus One</h2>
-                <h4>SAVE THE DATE!!!</h4>
                 <p>March 15 @ 7:30 pm</p>
+                <h4>SAVE THE DATE!!!</h4>
             </div>
             <div class="shows">
                 <img src="#">
                 <h2>Windscapes</h2>
-                <h4>SAVE THE DATE!!!</h4>
                 <p>May 17 @ 7:30 pm</p>
+                <h4>SAVE THE DATE!!!</h4>
             </div>
         </div>
         
         <!-- testimonial 3 -->
         
         <div class="testimonials">
-            <h3>"...gleaming, super precise performance." - Mike Greenberg</h3>
+            <h3 class="testText">"Consistently stylish, lively, and polished performances." - Mike Greenberg </h3>
         </div>
         
         <!-- recordings -->
         
         <div id="recordings">
             <h1>Recordings</h1>
-            <div id="cd1">
-                <img src="images/CD%20cover%20Olmos_Live.jpg">
-                <h2 style="color: white;">Olmos Live · 2017 · $15</h2>
-            </div>
             <div id="cd2">
                 <img src="images/MadeInFrance_OlmosEnsemble_CASE_W139_FRONT.jpg">
                 <h2 style="color: white;">Made in France · 2019 · $20</h2>
             </div>
-            <h3 style="color: white;"><strong>Contact the <a href="mailto:olmosensemble@gmail.com">Olmos Ensemble</a> by email to make a request to purchase a CD!<br><br></strong></h3>
+            <div id="cd1">
+                <img src="images/CD%20cover%20Olmos_Live.jpg">
+                <h2 style="color: white;">Olmos Live · 2017 · $15</h2>
+            </div>
+            <h3 style="color: white; width: 95%; margin: 0 auto;"><strong>Contact the <a href="mailto:olmosensemble@gmail.com">Olmos Ensemble</a> by email to make a request to purchase a CD!<br><br></strong></h3>
             <h4>Previous Live Concert Recordings:<br><br><a class="prevconc" href="http://www.soundcloud.com/texaspublicradio/performance-saturday-olmos-ensemble-8-25-2019">August 25, 2019</a> <a class="prevconc" href="http://www.soundcloud.com/texaspublicradio/performance-saturday-olmos-ensemble-8-18-2019">August 18, 2019</a> <a class="prevconc" href="http://www.soundcloud.com/texaspublicradio/performance-saturday-olmos-ensemble-8-11-2019">August 11, 2019</a></h4>
         </div>
         
         <!-- donors -->
         
         <div id="donors">
-            <h1>Our Generous Donors & Supporters</h1>
-            <p style="width: 80%; margin: 0 auto 20px; color: lightgrey; font-size: 110%">Listed here are the generous donors who make this experience possible through gifts or pledges for our upcoming season made since May 1, 2020. We try to keep this listing as up-to-date as possible, so if you are a donor and do not see your name on this list please contact Olmos Ensemble. </p>
+            <h1>Business and Media Support</h1>
+            <!--<p style="width: 80%; margin: 0 auto 20px; color: lightgrey; font-size: 110%">Listed here are the generous donors who make this experience possible through gifts or pledges for our upcoming season made since May 1, 2020. We try to keep this listing as up-to-date as possible, so if you are a donor and do not see your name on this list please contact Olmos Ensemble. </p>-->
             <div id="namelist">
-                <h4>Concert Sponsors</h4>
+                <!--<h4>Concert Sponsors</h4>
                 <p>Steven Alan Bennett and Dr. Elaine Melotti Schmidt</p>
                 <p>Dr. Kenneth Bloom and Dr. Sheila Swartzman</p>
                 <p>Drs. Margo Denke and James E. Griffin</p>
@@ -242,13 +251,16 @@
                 <p>Denny Ware</p>
                 <p>Texas Commision on the Arts</p>
                 <p>Russell Hill Rogers Fund for the Arts</p>
+                
                 <h4>Artist Sponsors</h4>
                 <p>Terra Nova Violins</p>
                 <p>Russell Hill Rogers Fund for the Arts</p>
                 <p>Texas Commision on the Arts</p>
+                
                 <h4>Benefactors ($10,000 - $50,000)</h4>
                 <p>Drs. Margo Denke and James E. Griffin</p>
                 <p>Agnes and Jim Lowe</p>
+                
                 <h4>Patrons ($5,000 - $9,999)</h4>
                 <p>Steven Alan Bennett and Dr. Elaine Melotti Schmidt</p>
                 <p>Mr. & Mrs. Ryan Fellows</p>
@@ -257,6 +269,7 @@
                 <p>Dr. Sheila Swartzman and Dr. Kenneth Bloom</p>
                 <p>Denny Ware</p>
                 <p>Russell Hill Rogers Fund for the Arts</p>
+                
                 <h4>Contributors ($1,000 - $4,999)</h4>
                 <p>Mary Jane Ely</p>
                 <p>Jim and Francis Garner</p>
@@ -265,10 +278,12 @@
                 <p>Penny Wiederhold</p>
                 <p>Texas Commission on the Arts</p>
                 <p>CARES fund for the Arts</p>
+                
                 <h4>Donors ($500 - $999)</h4>
                 <p>Anonymous</p>
                 <p>Edward Eaton</p>
                 <p>Susan Gershenhorn, Ph.D.</p>
+                
                 <h4>Supporters ($200 - $499)</h4>
                 <p>Anonymous</p>
                 <p>Curt and Lorraine Anastasio</p>
@@ -283,6 +298,7 @@
                 <p>Christie Smith</p>
                 <p>Katherine Totten</p>
                 <p>Martha Wills</p>
+                
                 <h4>Friends (up to $199)</h4>
                 <p>Anonymous</p>
                 <p>Susan Hamilton and David Coleman</p>
@@ -293,6 +309,7 @@
                 <p>Elise and Mark Schlessinger</p>
                 <p>Georgina R. Schwartz</p>
                 <p>Dr. Ana M. Valadez</p>
+                
                 <h4>Artist Fund</h4>
                 <p>Curt and Lorraine Anastasio</p>
                 <p>Steven Alan Bennett and Dr. Elaine Melotti Schmidt</p>
@@ -317,8 +334,16 @@
                 <p>Rev. Frank Seaman</p>
                 <p>Christie Smith</p>
                 <p>Penny Wiederhold</p>
-                <p>Martha Wills</p>
+                <p>Martha Wills</p>-->
+                <h4>Donors</h4>
+                <p>Russell Hill Rogers Fund for the Arts</p>
+                <p>Texas Commission on the Arts</p>
+                <p>National Endowment for the Arts</p>
+                <p>Concert Sponsors</p>
+                <p>Individual Donors</p>
+                
                 <h4>Business Partners</h4>
+                <p>Terra Nova Violins</p>
                 <p>Laurel Heights United Methodist Church, San Antonio</p>
                 <p>Creative Juices Designs, LLC</p>
                 <p>Big Star Branding</p>
@@ -331,6 +356,7 @@
                 <p>Steve Peterson Videography</p>
                 <p>Steinway Gallery</p>
                 <p>Alamo Music Center</p>
+                
                 <h4>Media Supporters</h4>
                 <p>88.3 KPAC</p>
                 <p>Incident Light</p>
@@ -340,7 +366,8 @@
                 <p>San Antonio Magazine</p>
                 <p>KLRN Public Television</p>
                 <p>MySA Events</p>
-                <h4>Volunteers and In Kind Donaters</h4>
+                
+                <!--<h4>Volunteers and In Kind Donors</h4>
                 <p>Geoffrey Waite, Director of Music, Laurel Heights UMC</p>
                 <p>Rev. Dr. Paul L. Escamilla, Laurel Heights United Methodist Church</p>
                 <p>Joshua Shterenberg, Technical Specialist</p>
@@ -358,7 +385,7 @@
                 <p>Samuel Shterenberg</p>
                 <p>Sheila Swartzman</p>
                 <p>Penny Wiederhold</p>
-                <p>Catie White</p>
+                <p>Catie White</p>-->
             </div>
         </div>
         
@@ -367,10 +394,10 @@
         <div id="donate">
             <h1>Donate</h1>
             <p>Olmos Ensemble is a 501(c)(3) not-for-profit organization and your gift is tax deductible to the extent allowable by law. 
-                Click the link below to make a secure donation through PayPal.</p>
+                Click the link below to make a secure donation through PayPal.<br><br></p>
             
-            <a href="https://www.powr.io/apps/paypal-button/view?id=21188836&mode=page&transaction_id=5589154"><h3>Donate Now</h3></a>
-            <p>Or, you can donate in-person at any of the Olmos Ensemble events and concerts, or sent a check by mail to our address.
+            <a href="https://www.powr.io/apps/paypal-button/view?id=21188836&mode=page&transaction_id=5589154"><h3 id="donateButton">Donate Now</h3></a> 
+            <p><br>Or, you can donate in-person at any of the Olmos Ensemble events and concerts, or send a check by mail to P.O.Box 701864, San Antonio, TX 78270.
                 <br><br>We are able to accept donations of stock or securities as well as bequest gifts through your will or living trust. You can also name Olmos Ensemble as a beneficiary on your retirement plan, life insurance policy or your donor-advised fund. By filling out a form that is entirely separate from your will, you can review and adjust beneficiary designations at any time. 
                 <br><br></p>
                 <p style="text-align: center;">Annual Support Levels: <br>Benefactor ($10,000 and above) <br>Patron ($5000 - $9999)<br>Contributor ($1000 - $4999) <br>Donor ($500 - $999) <br>Supporter ($200 - $499) <br>Friend ($100 - $199) <br><br></p>
@@ -380,7 +407,7 @@
         <!-- Testimonial 1 -->
         
         <div class="testimonials">
-            <h3>"Consistently stylish, lively, and polished performances." - Mike Greenberg</h3>
+            <h3 class="testText"></h3>
         </div>
         
         <!-- About paragraph -->
@@ -394,7 +421,7 @@
         
         <div id="contact">
             <h1>Contact Us</h1>
-            <h3 style="color: white; text-align: center;">P.O. Box 701864 San Antonio, TX, 78270 - <a href="mailto:olmosensemble@gmail.com">olmosensemble@gmail.com</a> - (210) 269-1925</h3>
+            <h3 style="color: white; text-align: center; width: 90%; margin: 0 auto;">P.O. Box 701864 San Antonio, TX, 78270 - <a href="mailto:olmosensemble@gmail.com">olmosensemble@gmail.com</a> - (210) 269-1925</h3>
             <form action="action_page.php" method="post">
                 <label for="femail">Your Full Name</label>
                 <input type="text" id="fname" name="full_name" placeholder="John Smith">
@@ -404,7 +431,7 @@
                 <input type="text" id="subject" name="emailsubject" placeholder="Subject Here...">
                 <label for="message">Your Message</label>
                 <textarea id="message" name="message" placeholder="Your Message Here..." style="height: 200px"></textarea>
-                <input type="submit" name="submit" value="Submit">
+                <input type="submit" id="subbutton" name="submit" value="Submit">
             </form>
         </div>
         
@@ -412,18 +439,18 @@
         
         <div id="cpyrght">
             <div id="navPics2">
-                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png"></a>
-                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png"></a>
-                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png"></a>
-                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png"></a>
-                <a href="#summer"><img src="images/icon_calendar.png"></a>
+                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png" class="boys"></a>
+                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png" class="boys"></a>
+                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png" class="boys"></a>
+                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" class="boys"></a> 
+                <a href="#summer"><img src="images/icon_calendar.png" class="boys"></a>
             </div>
             <h4>© 2020 Olmos Ensemble, All Rights Reserved. Created by Joshua Shterenberg.</h4>
         </div>
         
         <!-- JavaScript -->
         
-        <script type="text/javascript">            
+        <script type="text/javascript">
             window.onscroll = function() {scrollFunction()};
             window.onload = function() {loadFunction()};
             window.addEventListener("hashchange", offsetAnchor);
@@ -432,15 +459,41 @@
                     window.scrollTo(window.scrollX, window.scrollY - 90);
                 }
             }
+            document.getElementById("phonemenu").style.display = "none";
             function loadFunction() {
-                if (screen.width <= 500) {
+                if (screen.width <= 830) {
+                    document.getElementById("phonemenu").style.display = "initial";
+                    var l = document.getElementsByTagName("p");
+                    for (var i = 0; i < l.length; i++) {
+                        l[i].style.fontSize = "12px";
+                    }
+                    var w = document.getElementsByTagName("h3");
+                    for (var i = 0; i < w.length; i++){
+                        w[i].style.fontSize = "12px";
+                    }
                     document.getElementById("headerNav").style.display = "none";
                     document.getElementById("navPics").style.display = "none";
+                    document.getElementById("logo").style.margin = "0 auto";
+                    document.getElementById("logo").style.maxWidth = "20%";
+                    document.getElementById("donateButton").style.width = "200px";
+                    document.getElementById("subbutton").style.width = "50%";
+                    var x = document.getElementsByClassName("smallPics");
+                    var y = document.getElementsByClassName("name");
+                    var z = document.getElementsByClassName("instrumentName");
+                    var a = document.getElementsByClassName("boys");
+                    for (var i = 0; i < x.length; i++) {
+                        x[i].style.width = "26%";
+                        y[i].style.fontSize = "12px";
+                        z[i].style.fontSize = "10px";
+                    }
+                    for (var i = 0; i < a.length; i++) {
+                        a[i].style.width = "30px";
+                    }
                 }
             }
             function scrollFunction() {
                 var x = document.getElementsByClassName("navLinks");
-                if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (screen.width > 500)) {
+                if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (screen.width > 830)) {
                     document.getElementById("logo").style.maxWidth = "15%";
                     document.getElementById("logo").style.margin = "0.5% 0 0.5% 2%";
                     document.getElementById("navPics").style.display = "none";
@@ -448,9 +501,9 @@
                     document.getElementById("headUL").style.margin = "0 -5% 2% 0";
                     document.getElementById("headerNav").style.marginTop = "2.2%";
                     for (var i = 0; i < x.length; i++) {
-                        x[i].style.fontSize = "98%";
+                        x[i].style.fontSize = "1.2vw";
                     }
-                } else if (screen.width > 500) {
+                } else if (screen.width > 830) {
                     document.getElementById("logo").style.maxWidth = "50%";
                     document.getElementById("logo").style.margin = "1% 0 1% 25%";
                     document.getElementById("navPics").style.display = "inherit";
@@ -458,9 +511,17 @@
                     document.getElementById("headUL").style.margin = "0 auto 2% auto";
                     document.getElementById("headerNav").style.marginTop = "21%";
                     for (var i = 0; i < x.length; i++) {
-                        x[i].style.fontSize = "135%";
+                        x[i].style.fontSize = "1.5vw";
                     }
                 }
+            }
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("header").style.marginLeft = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("header").style.marginLeft = "0";
             }
         </script>
     </body>
