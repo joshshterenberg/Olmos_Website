@@ -99,6 +99,8 @@ h1, h2, h3, h4 {
 }
 #current h2 {
     font-size: 2.9vw;
+    padding-top: 40px;
+    margin-top: -15px;
 }
 #cpyrght h4 {
     color: white;
@@ -108,6 +110,7 @@ h1, h2, h3, h4 {
 }
 p {
     font-size: min(140%, 2vw);
+    font-family: robotoLight;
 }
 h1 {
     font-size: min(6vw, 400%);
@@ -135,11 +138,17 @@ h1 {
     margin: 0;
     padding: 0;
 }
+.testimonials h4 {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: min(1.5vw, 100%);
+}
 .testimonials h3 {
     color: white;
     font-size: min(2.2vw, 140%);
     margin: 0;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 #artists {
     background-color: rgba(52,68,134,1);
@@ -155,9 +164,7 @@ h1 {
     width: 12%;
     height: 30%;
 }
-.smallPics h4 {
-    font-size: 1.5vw;
-}
+
 .smallPics img {
     width: 100%;
     height: 100%;
@@ -168,6 +175,7 @@ h1 {
 .name {
     color: white;
     margin: 0;
+    font-size: 1.4vw;
 }
 .name a {
     cursor: pointer;
@@ -175,6 +183,7 @@ h1 {
 
 .instrumentName {
     margin: 0;
+    font-size: 1.5vw;
     color: white;
 }
 
@@ -311,12 +320,12 @@ h1 {
     width: 70%;
     color: white;
     line-height: 1.3em;
-    margin: 1.5% auto;
+    margin: 0 auto;
 }
 #donateButton {
     background-color: inherit;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 15px 5px;
     text-align: center;
     width: max(10%, 20vw);
     transition: 0.2s;
@@ -421,9 +430,9 @@ button:hover {
 #current {
     text-align: center;
     color: white;
-    background-color: rgba(111,32,195, 1);
+    background-color: rgb(50,50,50);
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .sidebar {
@@ -470,8 +479,25 @@ button:hover {
 }
 
 #covidbutton {
+    background-color: inherit;
+    color: white;
+    border: none;
     width: auto; 
-    padding: 5px; 
+    padding: 5px 10px; 
     border-radius: 5px;
-    margin-top: 10px;
+    margin: 20px 0;
+    
+}
+
+#coviddetails {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#currentvids p {
+    display: inline-block;
+    text-align: center; 
+    margin: 0 3vw; 
+    padding: 0;
 }
