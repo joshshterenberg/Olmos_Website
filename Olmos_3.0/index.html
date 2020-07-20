@@ -11,13 +11,13 @@
         
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="#about" onclick="closeNav()">About</a>
             <a href="#current" onclick="closeNav()">Current Events</a>
             <a href="#artists" onclick="closeNav()">Artists</a>
             <a href="#summer" onclick="closeNav()">Concert Schedule</a>
             <a href="#recordings" onclick="closeNav()">Recordings</a>
             <a href="#donors" onclick="closeNav()">Supporters</a>
             <a href="#donate" onclick="closeNav()">Donate</a>
-            <a href="#about" onclick="closeNav()">About</a>
             <a href="#contact" onclick="closeNav()">Contact Us</a>
         </div>
         
@@ -25,13 +25,13 @@
             <a href="#"><img id="logo" src="images/OLMOS_logo_multicolor.png"></a>
             <nav id="headerNav">
                 <ul id="headUL">
+                    <li class="navLinks"><a href="#about">About</a></li>
                     <li class="navLinks"><a href="#current">Current Events</a></li>
                     <li class="navLinks"><a href="#artists">Artists</a></li>
                     <li class="navLinks"><a href="#summer">Concert Schedule</a></li>
                     <li class="navLinks"><a href="#recordings">Recordings</a></li>
                     <li class="navLinks"><a href="#donors">Supporters</a></li>
                     <li class="navLinks"><a href="#donate">Donate</a></li>
-                    <li class="navLinks"><a href="#about">About</a></li>
                     <li class="navLinks"><a href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
@@ -55,7 +55,7 @@
         
         <div id="about">
             <h1>About Olmos Ensemble</h1>
-            <p>Board of Directors: Jeff Glass, M.D., President; Catie White, Secretary; James Garner, Treasurer; Penny Wiederhold; Anne Johnson; Mary Jane Ely<br><br>Executive Director: <a href="https://sasymphony.org/people/renia-piotrowski-shterenberg/">Renia Shterenberg</a> <br>Artistic Director: <a href="https://sasymphony.org/people/mark-teplitsky/">Mark Teplitsky</a><br>Artistic Director Emeritus: Mark Ackerman<br><br>Since its founding in 1994, Olmos Ensemble has established itself as one of the premier chamber music organizations in Texas and is increasingly gaining national recognition through its world class performances, live broadcasts and recordings. Comprised of first chair players from the San Antonio Symphony and supplemented by leading musicians from across the United States, Olmos Ensemble’s programming has won plaudits for its innovative programming, showcasing neglected works by female composers, forgotten Baroque gems and challenging contemporary pieces along side insightful interpretations of standard chamber repertoire from the 18th, 19th and 20th centuries.<br><br>In addition to an annual Summer Concert Series in August and four program Regular Concert Series throughout the year, Olmos Ensemble is regularly featured in broadcast performances on Texas Public Radio and American Public Media’s Performance Today. Past Olmos Ensemble guest artists have included internationally acclaimed artists such as <a href="https://www.vadimgluzman.com">Vadim Gluzman</a>, <a href="https://warrenjones.com">Warren Jones</a> and <a href="http://parkerartists.com/John-Novacek.html">John Novacek</a>.<br><br>MISSION STATEMENT<br><br>Olmos Ensemble honors the tradition of chamber music in South Texas, shares its artistry with audiences across the region and celebrates excellence in music through exciting and inspiring performances.</p>
+            <p>Board of Directors: Jeff Glass, M.D., President; Catie White, Secretary; James Garner, Treasurer; Penny Wiederhold; Anne Johnson; Mary Jane Ely<br><br>Executive Director: <a href="https://sasymphony.org/people/renia-piotrowski-shterenberg/">Renia Shterenberg</a> <br>Artistic Director: <a href="https://sasymphony.org/people/mark-teplitsky/">Mark Teplitsky</a><br>Artistic Director Emeritus: Mark Ackerman<br><br>Since its founding in 1994, Olmos Ensemble has established itself as one of the premier chamber music organizations in Texas and is increasingly gaining national recognition through its world class performances, live broadcasts and recordings. Comprised of first chair players from the San Antonio Symphony and supplemented by leading musicians from across the United States, Olmos Ensemble’s programming has won plaudits for its innovative programming, showcasing neglected works by female composers, forgotten Baroque gems and challenging contemporary pieces along side insightful interpretations of standard chamber repertoire from the 18th, 19th and 20th centuries.<br><br>In addition to an annual Summer Concert Series in August and four program Regular Concert Series throughout the year, Olmos Ensemble is regularly featured in broadcast performances on Texas Public Radio and American Public Media’s Performance Today. Past Olmos Ensemble guest artists have included internationally acclaimed artists such as <a href="https://www.vadimgluzman.com">Vadim Gluzman</a>, <a href="https://warrenjones.com">Warren Jones</a> and <a href="http://parkerartists.com/John-Novacek.html">John Novacek</a>.<br><br>MISSION STATEMENT<br><br>Olmos Ensemble honors the tradition of chamber music in South Texas, shares its artistry with audiences across the region and celebrates excellence in music through <a href="#summer">exciting and inspiring performances</a>.</p>
         </div>
         
         <!-- filler pic -->
@@ -146,7 +146,7 @@
             <div class="smallPics">
                 <img src="images/PattiWolf.jpg">
                 <h4 class="name"><a href=https://music.utexas.edu/about/people/wolf-patti>Patti Wolf</a></h4>
-                <h4 class="instrumentName">HARP. / PIANO</h4>
+                <h4 class="instrumentName">HPCD. / PIANO</h4>
             </div>
             <div class="smallPics">
                 <img src="images/TimJones.jpg">
@@ -168,26 +168,32 @@
             <h1>Season 26: "Virtuosos and Visionaries"<br>Summer Concert Series</h1>
             <h3>All concerts will be live broadcated on KPAC 88.3 FM in San Antonio. We do not sell tickets, but reservations are required. Contact us to make a reservation. Performance Location: <a href="https://www.google.com/maps/place/Laurel+Heights+United+Methodist+Church/@29.4530932,-98.4987385,17z/data=!3m1!4b1!4m5!3m4!1s0x865c5f68cbd37889:0xa26a80d57e16662d!8m2!3d29.4530932!4d-98.4965498">LHUMC</a></h3>
             <div class="shows">
-                <img src="#">
-                <h2>Celebrating Beethoven</h2>
+                <img src="images/testImg.jpg">
+                <h2>Celebrating Beethoven · <a id="myBtn">More Information</a></h2>
                 <p>August 2 @ 3:00 pm</p>
                 <h4>Beethoven<br>Jones, Teplitsky, Kuster, Sykes</h4>
             </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Sample text...</p>
+                </div>
+            </div>
             <div class="shows">
-                <img src="#">
-                <h2>Elegant Baroque</h2>
+                <img src="images/testImg.jpg">
+                <h2>Elegant Baroque · <a>More Information</a></h2>
                 <p>August 9 @ 3:00 pm</p>
                 <h4>Bach, Handel, Telemann, Vivaldi, Goldberg <br>Teplitsky, Lueders, de Oliveira, Wolf</h4>
             </div>
             <div class="shows">
-                <img src="#">
-                <h2>Summer Salon</h2>
+                <img src="images/testImg.jpg">
+                <h2>Summer Salon · <a>More Information</a></h2>
                 <p>August 16 @ 3:00 pm</p>
                 <h4>Gaubert, Machado, Bach, Enescu, Ginastera, Villa-Lobos<br>Teplitsky, Steele, Bustos, Wolf</h4>
             </div>
             <div class="shows">
-                <img src="#">
-                <h2>Dreams of America</h2>
+                <img src="images/testImg.jpg">
+                <h2>Dreams of America · <a>More Information</a></h2>
                 <p>August 23 @ 3:00 pm</p>
                 <h4>Bernstein, Rochberg, Persichetti, Rachmaninov, Gershwin<br>Shterenberg, Garza, Wolfram</h4>
             </div>
@@ -201,23 +207,23 @@
             <h1>Season 26: "Virtuosos and Visionaries"<br>Season Concert Series</h1>
             <h3 style="text-align: center;">Concert information will be available after September 1, 2020</h3>
             <div class="shows">
-                <img src="#">
-                <h2>Musical Menagerie</h2>
+                <img src="images/testImg.jpg">
+                <h2>Musical Menagerie · <a>More Information</a></h2>
                 <p>September 21 @ 7:30 pm</p>
             </div>
             <div class="shows">
-                <img src="#">
-                <h2>Mozart Cocktail</h2>
+                <img src="images/testImg.jpg">
+                <h2>Mozart Cocktail · <a>More Information</a></h2>
                 <p>January 25 @ 7:30 pm</p>
             </div>
             <div class="shows">
-                <img src="#">
-                <h2>Plus One</h2>
+                <img src="images/testImg.jpg">
+                <h2>Plus One · <a>More Information</a></h2>
                 <p>March 15 @ 7:30 pm</p>
             </div>
             <div class="shows">
-                <img src="#">
-                <h2>Windscapes</h2>
+                <img src="images/testImg.jpg">
+                <h2>Windscapes · <a>More Information</a></h2>
                 <p>May 17 @ 7:30 pm</p>
             </div>
         </div>
@@ -412,12 +418,12 @@
                 <br><br>We are able to accept donations of stock or securities as well as bequest gifts through your will or living trust. You can also name Olmos Ensemble as a beneficiary on your retirement plan, life insurance policy or your donor-advised fund. By filling out a form that is entirely separate from your will, you can review and adjust beneficiary designations at any time. 
                 <br><br></p>
                 <p style="text-align: center;">Annual Support Levels: <br>Benefactor ($10,000 and above) <br>Patron ($5000 - $9999)<br>Contributor ($1000 - $4999) <br>Donor ($500 - $999) <br>Supporter ($200 - $499) <br>Friend ($100 - $199) <br><br></p>
-                <p>Questions? Contact us using the form below.</p>
+            <p>Questions? <a href="#contact">Contact us</a>.</p>
         </div>
         
         <!-- Testimonial 1 -->
         
-        <div class="testimonials">
+        <div class="testimonials2">
             <h3 class="testText">"The Olmos Ensemble enlightens the San Antonio community with enchanting music of breathtaking quality and unique interpretation."</h3>
             <h4>- Katie McGrail</h4>
         </div>
@@ -446,26 +452,32 @@
         
         <div id="cpyrght">
             <div id="navPics2">
-                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png" class="boys"></a>
-                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png" class="boys"></a>
-                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png" class="boys"></a>
-                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" class="boys"></a> 
-                <a href="#summer"><img src="images/icon_calendar.png" class="boys"></a>
+                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png" onmouseover="hover(this, 'images/icon_fbook_green.png')" onmouseout="hover(this, 'images/icon_fbook.png')"></a>
+                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png" onmouseover="hover(this, 'images/icon_insta_green.png')" onmouseout="hover(this, 'images/icon_insta.png')"></a>
+                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png" onmouseover="hover(this, 'images/icon_yt_green.png')" onmouseout="hover(this, 'images/icon_yt.png')"></a>
+                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" onmouseover="hover(this, 'images/icon_email_green.png')" onmouseout="hover(this, 'images/icon_email.png')"></a>
+                <a href="#summer"><img src="images/icon_cal.png" onmouseover="hover(this, 'images/icon_cal_green.png')" onmouseout="hover(this, 'images/icon_cal.png')"></a>
             </div>
             <h4>© 2020 Olmos Ensemble, All Rights Reserved.</h4>
+            
+            <h3 style="color: white; margin: 0 auto 20px auto; padding: 0; font-size: 0.9em">P.O. Box 701864, San Antonio, TX, 78270<br><br>Site designed by <a href="http://www.creativej.com">Creative Juices Design, LLC</a> and developed by <a href="http://www.linkedin.com/in/joshua-shterenberg">Joshua Shterenberg</a></h3>
         </div>
         
         <!-- JavaScript -->
         
         <script type="text/javascript">
+            
+            //Actions for when the user scrolls
             window.onscroll = function() {scrollFunction()};
-            window.onload = function() {loadFunction()};
             window.addEventListener("hashchange", offsetAnchor);
             function offsetAnchor() {
                 if(location.hash.length !== 0) {
                     window.scrollTo(window.scrollX, window.scrollY - 90);
                 }
             }
+            
+            //Actions for when the page is a phone
+            window.onload = function() {loadFunction()};
             document.getElementById("phonemenu").style.display = "none";
             function loadFunction() {
                 if (screen.width <= 830) {
@@ -498,6 +510,8 @@
                     }
                 }
             }
+            
+            //Actions for minimizing the top nav bar
             function scrollFunction() {
                 var x = document.getElementsByClassName("navLinks");
                 if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && (screen.width > 830)) {
@@ -522,6 +536,8 @@
                     }
                 }
             }
+            
+            //Actions for the mini nav bar for phones
             function openNav() {
                 document.getElementById("mySidebar").style.width = "250px";
                 document.getElementById("header").style.marginLeft = "250px";
@@ -530,6 +546,8 @@
                 document.getElementById("mySidebar").style.width = "0";
                 document.getElementById("header").style.marginLeft = "0";
             }
+            
+            //Covid button actions
             function openCOVID() {
                 var b = document.getElementById("covidbutton");
                 if (b.innerHTML === "Show More") {
@@ -540,8 +558,26 @@
                     document.getElementById("covidbutton").innerHTML = "Show More";
                 }
             }
+            
+            //Function for setting the colors of the images on hover
             function hover(element, replacement) {
                 element.setAttribute('src', replacement);
+            }
+            
+            //All the modal stuff
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
             }
         </script>
     </body>
