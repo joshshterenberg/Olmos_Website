@@ -3,11 +3,21 @@
     src: url(fonts/Roboto-Light.ttf);
     font-family: cominfB;
     src: url(fonts/CormorantInfant-Bold.ttf);
+    font-family: cominf;
+    src: url(fonts/CormorantInfant-BoldItalic.ttf);
 }
 body { 
     margin: 0;
     background-color: rgba(10,10,10,1);
     font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 #header {
     background-color: rgba(0,0,0,1);
@@ -16,14 +26,18 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height: auto;
 }
 #header #logo {
-    max-width: 50%;
-    margin: 2% 0 1% 25%;
+    max-width: 40%;
+    margin: 3% 0 1% 30%;
     height: auto;
-    width: auto/2;
+    width: 40%;
     float: left;
     transition: 0.4s;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 #headerNav {
     width: 100%;
@@ -95,8 +109,11 @@ a:hover {
     padding: 0;
     
 }
-h1, h2, h3, h4 {
+h1 {
     font-family: cominfB;
+}
+h2, h3, h4 {
+    font-family: robotoLight;
 }
 #current h2 {
     font-size: 2.9vw;
@@ -108,6 +125,7 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     padding: 25px 0 5px 0;
     width: 95%;
+    font-family: robotoLight;
 }
 p {
     font-size: min(140%, 2vw);
@@ -145,11 +163,13 @@ h1 {
     padding-bottom: 35px;
     font-size: min(1.5vw, 100%);
 }
-.testimonials h3, .testimonials2 h3 {
+.testimonials h3 {
     color: white;
     font-size: min(2.2vw, 140%);
     margin: 0;
-    padding: 50px 0 0 0;
+    padding: 50px 0 5px 0;
+    font-family: cominf;
+    font-size: 3vw;
 }
 #artists {
     background-color: rgba(52,68,134,1);
@@ -184,7 +204,7 @@ h1 {
 
 .instrumentName {
     margin: 0;
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: white;
 }
 
@@ -196,7 +216,7 @@ h1 {
 
 #summer h3 {
     width: 80%;
-    text-align: left;
+    text-align: center;
     color: white;
     font-size: min(1.9vw, 20px);
     margin: 0 auto;
@@ -219,7 +239,7 @@ h1 {
     margin: 0;
     padding: 0px;
     white-space: nowrap;
-    font-size: max(1.4vw, 10px);
+    font-size: max(1.4vw, 15px);
     overflow: auto;
 }
 .shows img {
@@ -233,7 +253,7 @@ h1 {
 .shows h2 {
     margin: 0;
     white-space: nowrap;
-    font-size: min(2.4vw, auto);
+    font-size: 300%;
     overflow: auto;
     padding: 14px 5px 0 0;
 }
@@ -284,6 +304,7 @@ h1 {
 #recordings h4 {
     width: 90%;
     margin: 0 auto;
+    color: white;
 }
 .prevconc {
     margin: 0 20px;
@@ -302,10 +323,16 @@ h1 {
 }
 
 #donors {
-    background-color: rgba(120,120,120,1);
+    background-color: rgb(50,50,50);
     text-align: center;
     height: auto;
     padding-bottom: 20px;
+}
+#donors h2 {
+    color: white;
+    font-size: 3.5vw;
+    padding-top: 4vw;
+    margin: 0 0 15px 0;
 }
 
 .row {
@@ -317,28 +344,39 @@ h1 {
 }
 
 #donate {
-    background-color: rgba(0,98,66,1);
+    background-color: rgba(50,50,50,1);
     height: auto;
     padding-bottom: 20px;
 }
-#donate p {
+#donate p, #donate h2 {
     width: 70%;
     color: white;
     line-height: 1.3em;
     margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#donate ul {
+    color: white;
+    width: 80%;
+    font-family: robotoLight;
+    font-size: 2vw;
+    margin: 0 auto;
 }
 #donateButton {
-    background-color: inherit;
+    background-color: #70bf44;
     margin: 0 auto;
     padding: 15px 5px;
     text-align: center;
     width: max(10%, 20vw);
-    transition: 0.2s;
+    transition: 0.4s;
     font-size: 150%;
-    color: #70bf44;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
 }
 #donateButton:hover {
-    color: #faaa69;
+    background-color: #faaa69;
 }
 
 #contact {
@@ -354,9 +392,10 @@ form {
     text-align: center;
 }
 input[type=text], select, textarea {
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     padding: 0;
     width: 100%;
+    font-family: monospace;
     display: block;
     height: 25px;
     
@@ -471,13 +510,9 @@ button:hover {
     margin-left: 50px;
 }
 .openbtn {
-    font-size: 20px;
     cursor: pointer;
     background-color: #111;
     color: white;
-    width: 50px;
-    padding: 0 0 0 10px;
-    border: none;
 }
 .openbtn:hover {
     background-color: #70bf44;
@@ -491,7 +526,9 @@ button:hover {
     padding: 5px 10px; 
     border-radius: 5px;
     margin: 20px 0;
-    
+}
+#covidbutton:hover {
+    color: #70bf44;
 }
 
 #coviddetails {
@@ -501,10 +538,6 @@ button:hover {
 
 
 #currentvids p {
-    display: inline-block;
-    text-align: center; 
-    margin: 0 3vw; 
-    padding: 0;
 }
 
 .testimonials2 {
@@ -556,3 +589,35 @@ button:hover {
     text-decoration: none;
     cursor: pointer;
 }
+#buttonWrapper {
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    height: auto;
+    padding-bottom: 0px;
+}
+
+#phonemenu {
+    margin: 3% 37% 1% 0;
+    padding: 4px 13px 5px 13px;
+    font-size: 3vw;
+    float: right;
+    border-radius: 8px;
+    transition: 0.4s;
+    width: auto;
+}
+
+#buttonP {
+    display: inline-block;
+    width: 85%;
+    text-align: center;
+    margin-left: 6.5%;
+    padding: 15px 0;
+}
+
+audio {
+    padding-bottom: 30px;
+}
+
+

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" />
+        <title>Olmos Ensemble | United States</title>
+    </head>
+    <body>
+        
+        <!-- Collapsable nav bar with title, links and small links [sidebar] -->
+        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="index.html" onclick="closeNav()">About Us</a>
+            <a href="current.html" onclick="closeNav()">Current Events</a>
+            <a href="artists.html" onclick="closeNav()">Artists & Guest Artists</a>
+            <a href="summer.html" onclick="closeNav()">Concert Schedule</a>
+            <a href="summer.html#recordings" onclick="closeNav()">Recordings</a>
+            <a href="donate.html" onclick="closeNav()">Donate</a>
+            <a href="contact.html" onclick="closeNav()">Contact Us</a>
+        </div>
+        
+        <div id="header">
+            
+            <!--<nav id="headerNav">
+                <ul id="headUL">
+                    <li class="navLinks"><a href="#about">About</a></li>
+                    <li class="navLinks"><a href="#current">Current Events</a></li>
+                    <li class="navLinks"><a href="#artists">Artists</a></li>
+                    <li class="navLinks"><a href="#summer">Concert Schedule</a></li>
+                    <li class="navLinks"><a href="#recordings">Recordings</a></li>
+                    <li class="navLinks"><a href="#donors">Supporters</a></li>
+                    <li class="navLinks"><a href="#donate">Donate</a></li>
+                    <li class="navLinks"><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div id="navPics">
+                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png" onmouseover="hover(this, 'images/icon_fbook_green.png')" onmouseout="hover(this, 'images/icon_fbook.png')"></a>
+                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png" onmouseover="hover(this, 'images/icon_insta_green.png')" onmouseout="hover(this, 'images/icon_insta.png')"></a>
+                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png" onmouseover="hover(this, 'images/icon_yt_green.png')" onmouseout="hover(this, 'images/icon_yt.png')"></a>
+                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" onmouseover="hover(this, 'images/icon_email_green.png')" onmouseout="hover(this, 'images/icon_email.png')"></a>
+                <a href="#summer"><img src="images/icon_cal.png" onmouseover="hover(this, 'images/icon_cal_green.png')" onmouseout="hover(this, 'images/icon_cal.png')"></a>
+            </div>-->
+            <div id="buttonWrapper">
+                <a href="index.html"><img id="logo" src="images/OLMOS_logo_multicolor.png"></a>
+                <button id="phonemenu" class="openbtn" onclick="openNav()">Page Selector: ☰</button>
+                <p id="buttonP">Olmos Ensemble honors the tradition of chamber music in South Texas, shares its artistry with audiences across the region and celebrates excellence in music through <a href="summer.html">exciting and inspiring performances</a>.</p>
+            </div>
+        </div>
+    
+        <!-- Group pic -->
+        
+        <div id="fillerImage">
+            <img src="images/olmos_red.jpg">
+        </div>
+        
+        <!-- donate -->
+        
+        <div id="donate">
+            <h1>Donate</h1>
+            <p>Olmos Ensemble is a 501(c)(3) not-for-profit organization. Your gift is tax deductible to the extent allowable by law. 
+                Click the link below to make a secure donation through PayPal.<br><br></p>
+            <!--
+            <a href="https://www.powr.io/apps/paypal-button/view?id=21188836&mode=page&transaction_id=5589154"><h3 id="donateButton">Donate Now</h3></a> 
+            <p><br>Or, you can donate in-person at any of the Olmos Ensemble events and concerts, or send a check by mail to P.O.Box 701864, San Antonio, TX 78270.
+                <br><br>We are able to accept donations of stock or securities as well as bequest gifts through your will or living trust. You can also name Olmos Ensemble as a beneficiary on your retirement plan, life insurance policy or your donor-advised fund. By filling out a form that is entirely separate from your will, you can review and adjust beneficiary designations at any time. 
+                <br><br></p>
+                <p style="text-align: center;">Annual Support Levels: <br>Benefactor · $10,000 and above <br>Patron · $5,000 – 9,999<br>Contributor · $1000 – $4999 <br>Donor · $500 – $999 <br>Supporter · $200 – $499 <br>Friend · $100 – $199 <br><br></p>
+            -->
+            <h2><strong>Ways to Donate</strong></h2>
+            <ul>
+                <li>In Person: See any staff member at any of the live Olmos Ensemble events and concerts throughout the entire season!</li>
+                <li>By Mail: Send a check to P.O.Box 701864, San Antonio, TX 78270.</li>
+                <li>With Stock/Securities: <a href="contact.html">Contact us</a> for more details!</li>
+                <li>Through Your Will/Living Trust: <a href="contact.html">Contact us</a> for more details!</li>
+                <li>Through Your Retirement Plan, Life Insurance, or Donor-Advised Fund: <a href="contact.html">Contact us</a> for more details!</li>
+            </ul>
+            <p><br>Or you can donate online, right now, with a secure donation through PayPal by clicking the button below!</p>
+            <h3 id="donateButton"><a href="https://www.powr.io/apps/paypal-button/view?id=21188836&mode=page&transaction_id=5589154" style="color: black;">Donate Now</a></h3> 
+        </div>
+        
+        <!-- Testimonial 1 -->
+        
+        <div class="testimonials">
+            <h3 class="testText">"The Olmos Ensemble enlightens the San Antonio community with enchanting music of breathtaking quality and unique interpretation."</h3>
+            <h4>- Katie McGrail</h4>
+        </div>
+        
+        <div id="donors">
+            <h2>Supporters</h2>
+            <!--<p style="width: 80%; margin: 0 auto 20px; color: lightgrey; font-size: 110%">Listed here are the generous donors who make this experience possible through gifts or pledges for our upcoming season made since May 1, 2020. We try to keep this listing as up-to-date as possible, so if you are a donor and do not see your name on this list please contact Olmos Ensemble. </p>-->
+            <div id="namelist">
+                <!--<h4>Concert Sponsors</h4>
+                <p>Steven Alan Bennett and Dr. Elaine Melotti Schmidt</p>
+                <p>Dr. Kenneth Bloom and Dr. Sheila Swartzman</p>
+                <p>Drs. Margo Denke and James E. Griffin</p>
+                <p>Mr. & Mrs. Ryan Fellows</p>
+                <p>Kenneth Fine and Rebecca Canary</p>
+                <p>Dr. Jeff Glass</p>
+                <p>Agnes and Jim Lowe</p>
+                <p>Denny Ware</p>
+                <p>Texas Commision on the Arts</p>
+                <p>Russell Hill Rogers Fund for the Arts</p>
+                
+                <h4>Artist Sponsors</h4>
+                <p>Terra Nova Violins</p>
+                <p>Russell Hill Rogers Fund for the Arts</p>
+                <p>Texas Commision on the Arts</p>
+                
+                <h4>Benefactors ($10,000 - $50,000)</h4>
+                <p>Drs. Margo Denke and James E. Griffin</p>
+                <p>Agnes and Jim Lowe</p>
+                
+                <h4>Patrons ($5,000 - $9,999)</h4>
+                <p>Steven Alan Bennett and Dr. Elaine Melotti Schmidt</p>
+                <p>Mr. & Mrs. Ryan Fellows</p>
+                <p>Kenneth Fine and Rebecca Canary</p>
+                <p>Dr. Jeff Glass</p>
+                <p>Dr. Sheila Swartzman and Dr. Kenneth Bloom</p>
+                <p>Denny Ware</p>
+                <p>Russell Hill Rogers Fund for the Arts</p>
+                
+                <h4>Contributors ($1,000 - $4,999)</h4>
+                <p>Mary Jane Ely</p>
+                <p>Jim and Francis Garner</p>
+                <p>Anne and Bruce Johnson</p>
+                <p>Katie McGrail</p>
+                <p>Penny Wiederhold</p>
+                <p>Texas Commission on the Arts</p>
+                <p>CARES fund for the Arts</p>
+                
+                <h4>Donors ($500 - $999)</h4>
+                <p>Anonymous</p>
+                <p>Edward Eaton</p>
+                <p>Susan Gershenhorn, Ph.D.</p>
+                
+                <h4>Supporters ($200 - $499)</h4>
+                <p>Anonymous</p>
+                <p>Curt and Lorraine Anastasio</p>
+                <p>Helga Anderson</p>
+                <p>Martin and Frederica Kushner</p>
+                <p>Barbara Kyse</p>
+                <p>Wallace and Sandra Murdoch, Jr.</p>
+                <p>Dr. Joseph and Toni Murgo </p>
+                <p>Loretta Patterson and Stan Tebbe</p>
+                <p>Rev. Frank Seaman</p>
+                <p>Nancy Taylor Shivers</p>
+                <p>Christie Smith</p>
+                <p>Katherine Totten</p>
+                <p>Martha Wills</p>
+                
+                <h4>Friends (up to $199)</h4>
+                <p>Anonymous</p>
+                <p>Susan Hamilton and David Coleman</p>
+                <p>Phyllis and Steve Ingram</p>
+                <p>Taddy McAllister</p>
+                <p>Barbara and Paul Park</p>
+                <p>Olive Roen</p>
+                <p>Elise and Mark Schlessinger</p>
+                <p>Georgina R. Schwartz</p>
+                <p>Dr. Ana M. Valadez</p>
+                
+                <h4>Artist Fund</h4>
+                <p>Curt and Lorraine Anastasio</p>
+                <p>Steven Alan Bennett and Dr. Elaine Melotti Schmidt</p>
+                <p>Edward Eaton</p>
+                <p>Mary Jane Ely</p>
+                <p>Susan Gershenhorn, Ph.D</p>
+                <p>Susan Hamilton and David Coleman</p>
+                <p>Phyllis and Steve Ingram</p>
+                <p>Anne and Bruce Johnson</p>
+                <p>Martin and Frederica Kushner</p>
+                <p>Barbara Kyse</p>
+                <p>Taddy McAllister</p>
+                <p>Katie McGrail</p>
+                <p>Wallace and Sandra Murdoch, Jr.</p>
+                <p>Dr. Joseph and Toni Murgo </p>
+                <p>Barbara and Paul Park</p>
+                <p>Loretta Patterson and Stan Tebbe</p>
+                <p>Olive Roen</p>
+                <p>Georgina Schwartz</p>
+                <p>Elise and Mark Schlessinger</p>
+                <p>Nancy Taylor Shivers</p>
+                <p>Rev. Frank Seaman</p>
+                <p>Christie Smith</p>
+                <p>Penny Wiederhold</p>
+                <p>Martha Wills</p>-->
+                <h4>Donors</h4>
+                <p>Russell Hill Rogers Fund for the Arts</p>
+                <p>Texas Commission on the Arts</p>
+                <p>National Endowment for the Arts</p>
+                <p>Concert Sponsors</p>
+                <p>Individual Donors</p>
+                
+                <h4>Business Partners</h4>
+                <p>Terra Nova Violins</p>
+                <p>Laurel Heights United Methodist Church, San Antonio</p>
+                <p>Creative Juices Designs, LLC</p>
+                <p>Big Star Branding</p>
+                <p>Garcia Art Glass</p>
+                <p>ConBrio Beads and Glass Jewelry by Susan Butler</p>
+                <p>Lily’s Cookies</p>
+                <p>Niche Clothier</p>
+                <p>Starbucks Coffee</p>
+                <p>Stephen Krause Recordings</p>
+                <p>Steve Peterson Videography</p>
+                <p>Steinway Gallery</p>
+                <p>Alamo Music Center</p>
+                
+                <h4>Media Supporters</h4>
+                <p>88.3 KPAC</p>
+                <p>Incident Light</p>
+                <p>American Public Media, Performance Today</p>
+                <p>Classical Voice North America</p>
+                <p>San Antonio Express-News</p>
+                <p>San Antonio Magazine</p>
+                <p>KLRN Public Television</p>
+                <p>MySA Events</p>
+                
+                <!--<h4>Volunteers and In Kind Donors</h4>
+                <p>Geoffrey Waite, Director of Music, Laurel Heights UMC</p>
+                <p>Rev. Dr. Paul L. Escamilla, Laurel Heights United Methodist Church</p>
+                <p>Joshua Shterenberg, Technical Specialist</p>
+                <p>Pary Jane Ely</p>
+                <p>James Garner</p>
+                <p>Jeff Glass, M.D.</p>
+                <p>Catherine Hangden</p>
+                <p>Anne and Bruce Johnson</p>
+                <p>Patricia Kalmans</p>
+                <p>Jim Kuster</p>
+                <p>Agnes Lowe</p>
+                <p>Katie McGrail</p>
+                <p>Aditi Sarlashkar</p>
+                <p>Dr. Elaine Melotti Schmidt </p>
+                <p>Samuel Shterenberg</p>
+                <p>Sheila Swartzman</p>
+                <p>Penny Wiederhold</p>
+                <p>Catie White</p>-->
+            </div>
+        </div>
+        
+        
+        
+        
+        
+       
+        
+        <!-- cpyrght -->
+        
+        <div id="cpyrght">
+            <div id="navPics2">
+                <a href="http://www.facebook.com/olmosensemble/"><img src="images/icon_fbook.png" onmouseover="hover(this, 'images/icon_fbook_green.png')" onmouseout="hover(this, 'images/icon_fbook.png')"></a>
+                <a href="http://www.instagram.com/olmosensemble"><img src="images/icon_insta.png" onmouseover="hover(this, 'images/icon_insta_green.png')" onmouseout="hover(this, 'images/icon_insta.png')"></a>
+                <a href="https://www.youtube.com/channel/UCqSmN4ikKs5s7s32ihw9XuA"><img src="images/icon_yt.png" onmouseover="hover(this, 'images/icon_yt_green.png')" onmouseout="hover(this, 'images/icon_yt.png')"></a>
+                <a href="mailto:olmosensemble@gmail.com"><img src="images/icon_email.png" onmouseover="hover(this, 'images/icon_email_green.png')" onmouseout="hover(this, 'images/icon_email.png')"></a>
+                <a href="summer.html"><img src="images/icon_cal.png" onmouseover="hover(this, 'images/icon_cal_green.png')" onmouseout="hover(this, 'images/icon_cal.png')"></a>
+            </div>
+            <h4>© 2020 Olmos Ensemble, All Rights Reserved.</h4>
+            
+            <h3 style="color: white; margin: 0 auto 20px auto; padding: 0; font-size: 0.9em">P.O. Box 701864, San Antonio, TX, 78270<br><br>Site designed by <a href="http://www.creativej.com">Creative Juices Design, LLC</a> and developed by <a href="http://www.linkedin.com/in/joshua-shterenberg">Joshua Shterenberg</a></h3>
+        </div>
+        
+        <!-- JavaScript Links -->
+        
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
